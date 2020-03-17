@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Pricing</title>
+</head>
+<body>
+    
+
+<div class="pricing-background">
+    <div class="pricing-wrapper">  
+        <div class="pricing-top-container">
+            <h1>Our Pricing</h1>
+            <div class="toggle-section">
+                <p>Annually</p>
+                <label class="switch">
+                    <input type="checkbox" name=checkname id="toggle-check" onclick="myFunction()">
+                    <span class="slider round"></span>
+                </label>
+                <p>Monthly</p>
+            </div>
+        </div>
+
+        <div class="pricing-bottom-container">
+            <div class="cards">
+
+                <div class="card-1 card-white">
+                    <div class="price-section">
+                        <h1>Basic</h1>
+                        <p class="dollar monthly">$19.99</p> <p hidden class="dollar annually">$199.99</p>
+                    </div>
+                    <div class="desc-section">
+                        <hr>
+                        <p>50 GB Storage</p>
+                        <hr>
+                        <p>2 User Allowed</p>
+                        <hr>
+                        <p>Send up to 3 GB</p>
+                        <hr>
+                    </div>
+                    <button class=button-gradient value="Learn More" onclick="window.location.href = '#';">
+                        Learn More
+                    </button>
+
+                </div>
+
+                <div class="card-2 card-lilac">
+                    <div class="price-section">
+                        <h1>Professional</h1>
+                        <p class="dollar monthly">$24.99</p> <p hidden class="dollar annually">$249.99</p>
+                    </div>
+                    <div class="desc-section">
+                        <hr>
+                        <p>50 GB Storage</p>
+                        <hr>
+                        <p>2 User Allowed</p>
+                        <hr>
+                        <p>Send up to 3 GB</p>
+                        <hr>
+                    </div>
+                    <button class=button-white value="Learn More" onclick="window.location.href = '#';">
+                        Learn More
+                    </button>
+                </div>
+
+                <div class="card-3 card-white">
+                    <div class="price-section">
+                        <h1>Master</h1>
+                        <p class="dollar monthly">$39.99</p> <p hidden class="dollar annually">$399.99</p>
+                    </div>
+                    <div class="desc-section">
+                        <hr>
+                        <p>50 GB Storage</p>
+                        <hr>
+                        <p>2 User Allowed</p>
+                        <hr>
+                        <p>Send up to 3 GB</p>
+                        <hr>
+                    </div>
+                    <button class=button-gradient value="Learn More" onclick="window.location.href = '#';">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function myFunction(){
+
+                if ($('input[name=checkname]').is(':checked')){
+                $(".annually").show() && $(".monthly").hide();
+                }
+                else {
+                $(".annually").hide() && $(".monthly").show();
+            }
+    }
+
+</script>
+</body>
+</html>

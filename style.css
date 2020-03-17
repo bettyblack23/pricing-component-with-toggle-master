@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+
+html{
+  font-size: 100%;
+}
+
+body{
+    background-color: hsl(240, 78%, 98%);
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-background{
+    background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+    background-position: right -195px top -36px, left 0px bottom 0px;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.pricing-wrapper{
+    padding: 49px 0px 49px 0px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+/*********************Pricing Top Container***********************/
+
+.pricing-top-container h1{
+    font-size: 2.5rem ;
+    font-weight: 700;
+    color: hsl(233, 13%, 49%);
+    line-height: 71px;
+    text-align: center;
+    margin: 0;
+}
+
+.toggle-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 45.5px 0px;
+}
+
+.toggle-section p{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: hsl(234, 14%, 74%);
+    line-height: 28px;
+    margin: 0px;
+}
+
+/*********************The Toggle Switch***********************/
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 32px;
+    margin: 0px 24px;
+}
+
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(236, 72%, 79%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-image: linear-gradient(-90deg, hsl(237, 63%, 64%), hsl(236, 72%, 79%) );
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 2px hsl(232, 13%, 33%);
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/*********************The Toggle Switch End***********************/
+/*********************Pricing Top Container End***********************/
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-white{
+    color: hsl(232, 13%, 33%);
+    width: 87.500vw;
+    height: 489px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 36px 31px 38px 31px;
+    margin: 10px 0 10px 0px;
+    box-shadow: 0px 4px 30px -4px rgba(163, 168, 240,0.25);;
+    border-radius: 15px;
+    
+}
+
+.card-lilac {
+    color: white;
+    width: 87.500vw;
+    height: 528px;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    box-sizing: border-box;
+    padding: 36px 31px 38px 31px;
+    margin: 10px 0 10px 0px;
+    box-shadow: 0px 4px 30px -4px rgba(163, 168, 240,0.25);;
+    border-radius: 15px;
+}
+
+
+
+.price-section h1{
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 28px;
+
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.price-section p{
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: -2.64px;
+  margin-block-start: 40px;
+  margin-block-end: 0px;
+}
+
+.dollar::first-letter{
+  font-size: 2.5rem; 
+  letter-spacing: 6.75px;
+  vertical-align: top;
+}
+
+.desc-section{
+  margin: 40px 0 0 0;
+}
+
+.desc-section p{
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28px;
+  margin-block-start: 12px;
+  margin-block-end: 12px;
+}
+
+hr{
+  background-color: #CBCBCB;
+  color:#CBCBCB;
+  opacity: 40%;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding:0px;
+  height: 1.3px;
+  border: none;
+}
+
+
+.button-gradient{
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 18px;
+  color: white;
+  background: linear-gradient( 90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  width: 100%;
+  height: 44px;
+  margin: 32px 0px 0px 0px;
+  border: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.button-gradient:hover{
+  cursor: pointer;
+}
+
+
+.button-gradient:hover:active{
+  background: transparent;
+  color: hsl(237, 63%, 64%);
+  outline-color: hsl(237, 63%, 64%);
+}
+
+
+.button-white{
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 18px;
+  color: hsl(237, 63%, 64%);
+  background: white;
+  width: 100%;
+  height: 44px;
+  margin: 32px 0px 0px 0px;
+  border: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.button-white:hover{
+  cursor: pointer;
+}
+
+.button-white:hover:active{
+  background: transparent;
+  color: white;
+  outline-color: white;
+}
+
+@media (min-width:375px)
+{
+
+  .card-white{
+    width: 85.333vw;
+  }
+
+  .card-lilac{
+    width: 85.333vw;
+  }
+
+}
+
+@media (min-width:425px)
+{
+
+  .card-white{
+    width: 89.412vw;
+  }
+
+  .card-lilac{
+    width: 89.412vw;
+  }
+
+  .price-section p{
+    font-size: 5rem;
+  }
+}
+
+@media (min-width:768px)
+{
+
+  .card-white{
+    width: 30vw;
+  }
+
+  .card-lilac{
+    width: 30vw;
+  }
+
+  .price-section p{
+    font-size: 3rem;
+  }
+
+}
+
+
+@media (min-width:1024px)
+{
+
+  .card-white{
+    width: 29.297vw;
+  }
+
+  .card-lilac{
+    width: 29.297vw;
+    padding: 59px 31px 54px 31px;
+  }
+
+  .price-section p{
+    font-size: 4rem;
+  }
+  
+
+}
+
+@media (min-width:1280px){
+
+  .pricing-wrapper{
+    padding: 49px 0px 0px 0px;
+  }
+
+  .card-white{
+    width: 27.306vw
+    /*width: 27.344vw;*/
+  }
+
+  .card-lilac{
+    width: 27.306vw
+    /*width: 27.344vw;*/
+  }
+
+  .price-section p{
+    font-size: 5rem;
+  }
+}
+
+@media (min-width:1440px){
+
+  .card-white{
+    width: 24.306vw;
+  }
+
+  .card-lilac{
+    width: 24.306vw;
+  }
+}
+
+@media (min-width:1920px){
+
+  .card-white{
+    width: 18.50vw;
+  }
+
+  .card-lilac{
+    width: 18.50vw;
+  }
+}
+
+@media (min-width:2560px){
+
+  .card-white{
+    width: 19.5vw;
+  }
+
+  .card-lilac{
+    width: 19,5vw;
+  }
+}
