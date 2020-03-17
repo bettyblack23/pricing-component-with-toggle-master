@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
 
 html{
@@ -13,20 +13,24 @@ body{
 
 .pricing-background{
     background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
-    background-position: right -195px top -36px, left 0px bottom 0px;
+    background-position:right -180px top -30px, left 0px bottom 0px;
     background-repeat: no-repeat, no-repeat;
 }
 
 .pricing-wrapper{
-    padding: 49px 0px 49px 0px;
+    padding: 60px 0px 49px 0px;
     min-height: 100vh;
     margin: 0 auto;
 }
 
 /*********************Pricing Top Container***********************/
 
+.pricing-top-container{
+  margin:0 0 55.5px 0;
+}
+
 .pricing-top-container h1{
-    font-size: 2.5rem ;
+    font-size: 2rem ;
     font-weight: 700;
     color: hsl(233, 13%, 49%);
     line-height: 71px;
@@ -38,11 +42,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px 0px 45.5px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .toggle-section p{
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
     color: hsl(234, 14%, 74%);
     line-height: 28px;
@@ -58,6 +62,8 @@ body{
     width: 56px;
     height: 32px;
     margin: 0px 24px;
+
+    cursor: pointer;
 }
 
 
@@ -118,6 +124,11 @@ body{
 
 /*********************The Toggle Switch End***********************/
 /*********************Pricing Top Container End***********************/
+
+.pricing-bottom-container{
+  justify-content: center;
+}
+
 .cards{
     display: flex;
     flex-direction: row;
@@ -130,7 +141,7 @@ body{
 .card-white{
     color: hsl(232, 13%, 33%);
     width: 87.500vw;
-    height: 489px;
+    height: 459px;
     background-color: white;
     box-sizing: border-box;
     padding: 36px 31px 38px 31px;
@@ -143,7 +154,7 @@ body{
 .card-lilac {
     color: white;
     width: 87.500vw;
-    height: 528px;
+    height: 498px;
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     box-sizing: border-box;
     padding: 36px 31px 38px 31px;
@@ -155,7 +166,7 @@ body{
 
 
 .price-section h1{
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 28px;
 
@@ -168,7 +179,7 @@ body{
   font-weight: 700;
   line-height: 71px;
   letter-spacing: -2.64px;
-  margin-block-start: 40px;
+  margin-block-start: 20px;
   margin-block-end: 0px;
 }
 
@@ -183,7 +194,7 @@ body{
 }
 
 .desc-section p{
-  font-size: 1rem;
+  font-size: .92rem;
   font-weight: 700;
   line-height: 28px;
   margin-block-start: 12px;
@@ -206,7 +217,7 @@ hr{
   text-transform: uppercase;
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.81rem;
   letter-spacing: 2px;
   line-height: 18px;
   color: white;
@@ -218,9 +229,7 @@ hr{
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-}
 
-.button-gradient:hover{
   cursor: pointer;
 }
 
@@ -236,7 +245,7 @@ hr{
   text-transform: uppercase;
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.81rem;
   letter-spacing: 2px;
   line-height: 18px;
   color: hsl(237, 63%, 64%);
@@ -248,11 +257,10 @@ hr{
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-}
 
-.button-white:hover{
   cursor: pointer;
 }
+
 
 .button-white:hover:active{
   background: transparent;
@@ -285,7 +293,7 @@ hr{
   }
 
   .price-section p{
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -328,8 +336,13 @@ hr{
 
 @media (min-width:1280px){
 
+  .pricing-background{
+    background-position: right 0px top -10px, left 0px bottom 0px;
+    background-repeat: no-repeat, no-repeat;
+  }
+
   .pricing-wrapper{
-    padding: 49px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
   }
 
   .card-white{
@@ -343,7 +356,7 @@ hr{
   }
 
   .price-section p{
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 
