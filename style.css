@@ -220,9 +220,7 @@ hr{
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-}
 
-.button-gradient:hover{
   cursor: pointer;
 }
 
@@ -250,11 +248,10 @@ hr{
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-}
 
-.button-white:hover{
   cursor: pointer;
 }
+
 
 .button-white:hover:active{
   background: transparent;
